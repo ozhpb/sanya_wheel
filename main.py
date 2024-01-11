@@ -6,7 +6,9 @@ from datetime import datetime
 def main():
     datetime_now = datetime.now()
     memory_response = os.popen("free").read()
-    print(f"\nПоказатели памяти на {datetime_now} такие.\nТвоё дело распарсить ответ и сохранить показатели в файл | БД | др.\n")
+    print(f"\nПоказатели памяти на {datetime_now} такие."
+          "\nТвоё дело распарсить ответ и сохранить"
+          " показатели в файл | БД | др.\n")
     print(memory_response)
 
 
